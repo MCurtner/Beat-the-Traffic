@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34B810331BDBC6EA001FA5E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */; };
+		34B810351BDBC6EA001FA5E2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 34B810341BDBC6EA001FA5E2 /* GameScene.sks */; };
+		34B810371BDBC6EA001FA5E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810361BDBC6EA001FA5E2 /* GameScene.swift */; };
+		34B810391BDBC6EA001FA5E2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810381BDBC6EA001FA5E2 /* GameViewController.swift */; };
+		34B8103C1BDBC6EA001FA5E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B8103A1BDBC6EA001FA5E2 /* Main.storyboard */; };
+		34B8103E1BDBC6EA001FA5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B8103D1BDBC6EA001FA5E2 /* Assets.xcassets */; };
+		34B810411BDBC6EA001FA5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B8103F1BDBC6EA001FA5E2 /* LaunchScreen.storyboard */; };
+		34B8104C1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B8104B1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift */; };
+		34B810571BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810561BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34B810481BDBC6EA001FA5E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B810271BDBC6EA001FA5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34B8102E1BDBC6EA001FA5E2;
+			remoteInfo = "Beat the Traffic";
+		};
+		34B810531BDBC6EB001FA5E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B810271BDBC6EA001FA5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34B8102E1BDBC6EA001FA5E2;
+			remoteInfo = "Beat the Traffic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34B8102F1BDBC6EA001FA5E2 /* Beat the Traffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beat the Traffic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34B810341BDBC6EA001FA5E2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		34B810361BDBC6EA001FA5E2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		34B810381BDBC6EA001FA5E2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		34B8103B1BDBC6EA001FA5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34B8103D1BDBC6EA001FA5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34B810401BDBC6EA001FA5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34B810421BDBC6EA001FA5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34B810471BDBC6EA001FA5E2 /* Beat the TrafficTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beat the TrafficTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B8104B1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat_the_TrafficTests.swift; sourceTree = "<group>"; };
+		34B8104D1BDBC6EB001FA5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34B810521BDBC6EB001FA5E2 /* Beat the TrafficUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beat the TrafficUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B810561BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat_the_TrafficUITests.swift; sourceTree = "<group>"; };
+		34B810581BDBC6EB001FA5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34B8102C1BDBC6EA001FA5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B810441BDBC6EA001FA5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B8104F1BDBC6EB001FA5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34B810261BDBC6EA001FA5E2 = {
+			isa = PBXGroup;
+			children = (
+				34B810311BDBC6EA001FA5E2 /* Beat the Traffic */,
+				34B8104A1BDBC6EA001FA5E2 /* Beat the TrafficTests */,
+				34B810551BDBC6EB001FA5E2 /* Beat the TrafficUITests */,
+				34B810301BDBC6EA001FA5E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34B810301BDBC6EA001FA5E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34B8102F1BDBC6EA001FA5E2 /* Beat the Traffic.app */,
+				34B810471BDBC6EA001FA5E2 /* Beat the TrafficTests.xctest */,
+				34B810521BDBC6EB001FA5E2 /* Beat the TrafficUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34B810311BDBC6EA001FA5E2 /* Beat the Traffic */ = {
+			isa = PBXGroup;
+			children = (
+				34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */,
+				34B810341BDBC6EA001FA5E2 /* GameScene.sks */,
+				34B810361BDBC6EA001FA5E2 /* GameScene.swift */,
+				34B810381BDBC6EA001FA5E2 /* GameViewController.swift */,
+				34B8103A1BDBC6EA001FA5E2 /* Main.storyboard */,
+				34B8103D1BDBC6EA001FA5E2 /* Assets.xcassets */,
+				34B8103F1BDBC6EA001FA5E2 /* LaunchScreen.storyboard */,
+				34B810421BDBC6EA001FA5E2 /* Info.plist */,
+			);
+			path = "Beat the Traffic";
+			sourceTree = "<group>";
+		};
+		34B8104A1BDBC6EA001FA5E2 /* Beat the TrafficTests */ = {
+			isa = PBXGroup;
+			children = (
+				34B8104B1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift */,
+				34B8104D1BDBC6EB001FA5E2 /* Info.plist */,
+			);
+			path = "Beat the TrafficTests";
+			sourceTree = "<group>";
+		};
+		34B810551BDBC6EB001FA5E2 /* Beat the TrafficUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34B810561BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift */,
+				34B810581BDBC6EB001FA5E2 /* Info.plist */,
+			);
+			path = "Beat the TrafficUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34B8102E1BDBC6EA001FA5E2 /* Beat the Traffic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B8105B1BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the Traffic" */;
+			buildPhases = (
+				34B8102B1BDBC6EA001FA5E2 /* Sources */,
+				34B8102C1BDBC6EA001FA5E2 /* Frameworks */,
+				34B8102D1BDBC6EA001FA5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Beat the Traffic";
+			productName = "Beat the Traffic";
+			productReference = 34B8102F1BDBC6EA001FA5E2 /* Beat the Traffic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34B810461BDBC6EA001FA5E2 /* Beat the TrafficTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B8105E1BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the TrafficTests" */;
+			buildPhases = (
+				34B810431BDBC6EA001FA5E2 /* Sources */,
+				34B810441BDBC6EA001FA5E2 /* Frameworks */,
+				34B810451BDBC6EA001FA5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34B810491BDBC6EA001FA5E2 /* PBXTargetDependency */,
+			);
+			name = "Beat the TrafficTests";
+			productName = "Beat the TrafficTests";
+			productReference = 34B810471BDBC6EA001FA5E2 /* Beat the TrafficTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34B810511BDBC6EB001FA5E2 /* Beat the TrafficUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B810611BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the TrafficUITests" */;
+			buildPhases = (
+				34B8104E1BDBC6EB001FA5E2 /* Sources */,
+				34B8104F1BDBC6EB001FA5E2 /* Frameworks */,
+				34B810501BDBC6EB001FA5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34B810541BDBC6EB001FA5E2 /* PBXTargetDependency */,
+			);
+			name = "Beat the TrafficUITests";
+			productName = "Beat the TrafficUITests";
+			productReference = 34B810521BDBC6EB001FA5E2 /* Beat the TrafficUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34B810271BDBC6EA001FA5E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Matthew Curtner";
+				TargetAttributes = {
+					34B8102E1BDBC6EA001FA5E2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					34B810461BDBC6EA001FA5E2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 34B8102E1BDBC6EA001FA5E2;
+					};
+					34B810511BDBC6EB001FA5E2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 34B8102E1BDBC6EA001FA5E2;
+					};
+				};
+			};
+			buildConfigurationList = 34B8102A1BDBC6EA001FA5E2 /* Build configuration list for PBXProject "Beat the Traffic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34B810261BDBC6EA001FA5E2;
+			productRefGroup = 34B810301BDBC6EA001FA5E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34B8102E1BDBC6EA001FA5E2 /* Beat the Traffic */,
+				34B810461BDBC6EA001FA5E2 /* Beat the TrafficTests */,
+				34B810511BDBC6EB001FA5E2 /* Beat the TrafficUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34B8102D1BDBC6EA001FA5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B810351BDBC6EA001FA5E2 /* GameScene.sks in Resources */,
+				34B810411BDBC6EA001FA5E2 /* LaunchScreen.storyboard in Resources */,
+				34B8103E1BDBC6EA001FA5E2 /* Assets.xcassets in Resources */,
+				34B8103C1BDBC6EA001FA5E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B810451BDBC6EA001FA5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B810501BDBC6EB001FA5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34B8102B1BDBC6EA001FA5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B810371BDBC6EA001FA5E2 /* GameScene.swift in Sources */,
+				34B810391BDBC6EA001FA5E2 /* GameViewController.swift in Sources */,
+				34B810331BDBC6EA001FA5E2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B810431BDBC6EA001FA5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B8104C1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B8104E1BDBC6EB001FA5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B810571BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34B810491BDBC6EA001FA5E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34B8102E1BDBC6EA001FA5E2 /* Beat the Traffic */;
+			targetProxy = 34B810481BDBC6EA001FA5E2 /* PBXContainerItemProxy */;
+		};
+		34B810541BDBC6EB001FA5E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34B8102E1BDBC6EA001FA5E2 /* Beat the Traffic */;
+			targetProxy = 34B810531BDBC6EB001FA5E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34B8103A1BDBC6EA001FA5E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34B8103B1BDBC6EA001FA5E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34B8103F1BDBC6EA001FA5E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34B810401BDBC6EA001FA5E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34B810591BDBC6EB001FA5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34B8105A1BDBC6EB001FA5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34B8105C1BDBC6EB001FA5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Beat the Traffic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcurtner.Beat-the-Traffic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34B8105D1BDBC6EB001FA5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Beat the Traffic/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcurtner.Beat-the-Traffic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		34B8105F1BDBC6EB001FA5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Beat the TrafficTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcurtner.Beat-the-TrafficTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beat the Traffic.app/Beat the Traffic";
+			};
+			name = Debug;
+		};
+		34B810601BDBC6EB001FA5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Beat the TrafficTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcurtner.Beat-the-TrafficTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beat the Traffic.app/Beat the Traffic";
+			};
+			name = Release;
+		};
+		34B810621BDBC6EB001FA5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Beat the TrafficUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcurtner.Beat-the-TrafficUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Beat the Traffic";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		34B810631BDBC6EB001FA5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Beat the TrafficUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcurtner.Beat-the-TrafficUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Beat the Traffic";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34B8102A1BDBC6EA001FA5E2 /* Build configuration list for PBXProject "Beat the Traffic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B810591BDBC6EB001FA5E2 /* Debug */,
+				34B8105A1BDBC6EB001FA5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34B8105B1BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the Traffic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B8105C1BDBC6EB001FA5E2 /* Debug */,
+				34B8105D1BDBC6EB001FA5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		34B8105E1BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the TrafficTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B8105F1BDBC6EB001FA5E2 /* Debug */,
+				34B810601BDBC6EB001FA5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		34B810611BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the TrafficUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B810621BDBC6EB001FA5E2 /* Debug */,
+				34B810631BDBC6EB001FA5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34B810271BDBC6EA001FA5E2 /* Project object */;
+}
