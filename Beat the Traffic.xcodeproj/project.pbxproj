@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		348F0AC91BDC005200417F9C /* Coin.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 348F0AC81BDC005200417F9C /* Coin.atlas */; settings = {ASSET_TAGS = (); }; };
 		34B810331BDBC6EA001FA5E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */; };
 		34B810351BDBC6EA001FA5E2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 34B810341BDBC6EA001FA5E2 /* GameScene.sks */; };
 		34B810371BDBC6EA001FA5E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810361BDBC6EA001FA5E2 /* GameScene.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		348F0AC81BDC005200417F9C /* Coin.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Coin.atlas; sourceTree = "<group>"; };
 		34B8102F1BDBC6EA001FA5E2 /* Beat the Traffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beat the Traffic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34B810341BDBC6EA001FA5E2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		34B810311BDBC6EA001FA5E2 /* Beat the Traffic */ = {
 			isa = PBXGroup;
 			children = (
+				348F0AC81BDC005200417F9C /* Coin.atlas */,
 				34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */,
 				34B810341BDBC6EA001FA5E2 /* GameScene.sks */,
 				34B810361BDBC6EA001FA5E2 /* GameScene.swift */,
@@ -237,6 +240,7 @@
 				34B810351BDBC6EA001FA5E2 /* GameScene.sks in Resources */,
 				34B810411BDBC6EA001FA5E2 /* LaunchScreen.storyboard in Resources */,
 				34B8103E1BDBC6EA001FA5E2 /* Assets.xcassets in Resources */,
+				348F0AC91BDC005200417F9C /* Coin.atlas in Resources */,
 				34B8103C1BDBC6EA001FA5E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +497,7 @@
 				34B8105D1BDBC6EB001FA5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34B8105E1BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the TrafficTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				34B810601BDBC6EB001FA5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34B810611BDBC6EB001FA5E2 /* Build configuration list for PBXNativeTarget "Beat the TrafficUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				34B810631BDBC6EB001FA5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
