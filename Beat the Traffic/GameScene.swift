@@ -8,6 +8,7 @@
 
 import SpriteKit
 
+// Enum for zPosition of elements
 enum Layers: CGFloat {
     case Background = -1
     case Road
@@ -17,12 +18,12 @@ enum Layers: CGFloat {
     case PlayerCar
 }
 
+// Struct to assign each element to a categoryBitMask
 struct PhysicsCategory {
     static let Coin: UInt32 = 1
     static let Car: UInt32 = 2
     static let PlayerCar: UInt32 = 3
 }
-
 
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
@@ -45,6 +46,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var textureAtlas = SKTextureAtlas()
     var textureArray = [SKTexture]()
     var mainCoin = SKSpriteNode()
+    
+    // Sounds
+    
     
 
     override func didMoveToView(view: SKView) {
@@ -74,15 +78,26 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         createCoins()
         createCoins()
     
+        
+        // Play BG Noises
+        playAmbientTrafficLoop()
     }
     
     
     func didBeginContact(contact: SKPhysicsContact) {
-        print("Hello")
+        let firstBody: SKPhysicsBody = contact.bodyA
+        let secondBody: SKPhysicsBody = contact.bodyB
+        
+        if firstBody.categoryBitMask == PhysicsCategory.PlayerCar && secondBody.categoryBitMask == PhysicsCategory.Coin {
+            collisionWithCoin(PlayerCar: firstBody.node as! SKSpriteNode, Coin: secondBody.node as! SKSpriteNode)
+        }
+    
     }
     
     func collisionWithCoin(PlayerCar PlayerCar:SKSpriteNode, Coin: SKSpriteNode) {
         mainCoin.removeFromParent()
+        let coinSound = SKAction.playSoundFileNamed("coinSound.wav", waitForCompletion: false)
+        runAction(coinSound)
     }
     
     
@@ -126,6 +141,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    // MARK: -
+    
+    // Background SpriteNode
     func createBackground() {
         let background = SKSpriteNode(color: SKColor.greenColor(), size: CGSizeMake(frame.size.width, frame.size.height))
         background.zPosition = Layers.Background.rawValue
@@ -133,6 +151,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(background)
     }
     
+    // Road and center line SpriteNodes
     func createRoad() {
         let roadPath = SKSpriteNode(color: SKColor.blackColor(), size: CGSizeMake(128.0, frame.size.height))
         roadPath.position = CGPoint(x:frame.size.width/2, y: frame.size.height/2)
@@ -145,6 +164,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(centerLines)
     }
     
+    // Players car SpriteNode
     func createPlayerCar() {
         car.size = CGSizeMake(128.0, 128.0)
         car.position = CGPoint(x:frame.size.width/2 + 33, y: frame.size.height/2)
@@ -155,36 +175,32 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         car.physicsBody!.affectedByGravity = false
         car.physicsBody!.categoryBitMask = PhysicsCategory.PlayerCar
         car.physicsBody!.contactTestBitMask = PhysicsCategory.Coin
-        car.physicsBody!.dynamic = false
-
+        car.physicsBody!.dynamic = true
         
         self.addChild(car)
     }
     
     
+    // Add texture atlas images to the textureArray
     func addImagesToArrayFromTextureAtlas() {
         textureAtlas = SKTextureAtlas(named: "Coin")
         
-        // Sort Array
+        // Add images to textureArray
         for i in 1...textureAtlas.textureNames.count {
             let name = "coin\(i).png"
             textureArray.append(SKTexture(imageNamed: name))
         }
     }
     
+    
+    // Create the Coin SpriteNode
     func createCoins() {
         let randomX = getRandomness(zeroToValue: 2)
         let randomY = getRandomness(zeroToValue: frame.size.height * 2)
         
+        // Coin SpriteNode
         mainCoin = SKSpriteNode(imageNamed: textureAtlas.textureNames[0])
         mainCoin.size = CGSize(width: 50, height: 50)
-        
-        if randomX == 0 {
-            mainCoin.position = CGPoint(x: frame.size.width/2 - 32, y: randomY + frame.size.height)
-        }
-        if randomX == 1 {
-            mainCoin.position = CGPoint(x: frame.size.width/2 + 32, y: randomY + frame.size.height)
-        }
         mainCoin.zPosition = Layers.Coins.rawValue
         mainCoin.name = "coins"
         
@@ -193,10 +209,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         mainCoin.physicsBody!.affectedByGravity = false
         mainCoin.physicsBody!.categoryBitMask = PhysicsCategory.Coin
         mainCoin.physicsBody!.contactTestBitMask = PhysicsCategory.PlayerCar
-        mainCoin.physicsBody!.dynamic = true
+        mainCoin.physicsBody!.dynamic = false
+        
+        // Determine which lane the coin will be in
+        if randomX == 0 {
+            mainCoin.position = CGPoint(x: frame.size.width/2 - 32, y: randomY + frame.size.height)
+        }
+        if randomX == 1 {
+            mainCoin.position = CGPoint(x: frame.size.width/2 + 32, y: randomY + frame.size.height)
+        }
+
+        // Add the coin to the scene
         addChild(mainCoin)
         
-        //mainCoin.runAction(SKAction.repeatActionForever(SKAction.animateWithTextures(textureArray, timePerFrame: 0.09)))
+        // Animate through the textures to simulate the coin spinning
+        mainCoin.runAction(SKAction.repeatActionForever(SKAction.animateWithTextures(textureArray, timePerFrame: 0.09)))
     }
     
 
@@ -218,10 +245,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         carSprite.zPosition = Layers.Cars.rawValue
         
         carSprite.physicsBody = SKPhysicsBody(rectangleOfSize: CGSize(width: 35.0, height: 110))
-        //carSprite.physicsBody?.categoryBitMask = PhysicsCategory.Car
-        //carSprite.physicsBody?.contactTestBitMask = PhysicsCategory.PlayerCar
+        carSprite.physicsBody?.categoryBitMask = PhysicsCategory.Car
+        carSprite.physicsBody?.contactTestBitMask = PhysicsCategory.PlayerCar
         carSprite.physicsBody?.affectedByGravity = false
-        carSprite.physicsBody?.dynamic = false
+        carSprite.physicsBody?.dynamic = true
         
         // If randomX = 0, place car on the left side
         if randomX == 0 {
@@ -236,6 +263,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(carSprite)
     }
     
+    
+    // MARK: - Sounds
+    
+    func playAmbientTrafficLoop() {
+        let ambientTrafficNoise = SKAction.playSoundFileNamed("trafficBGNoise.wav", waitForCompletion: true)
+        let playBGTrafficLoop = SKAction.repeatActionForever(ambientTrafficNoise)
+        runAction(playBGTrafficLoop)
+    }
+    
+    
+    // MARK: - Helper Methods
     
     // Return the random value between 0 and the provided parameter
     func getRandomness(zeroToValue zeroToValue: CGFloat) -> CGFloat {

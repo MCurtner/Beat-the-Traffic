@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		348F0AC91BDC005200417F9C /* Coin.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 348F0AC81BDC005200417F9C /* Coin.atlas */; settings = {ASSET_TAGS = (); }; };
+		348F0AC91BDC005200417F9C /* Coin.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 348F0AC81BDC005200417F9C /* Coin.atlas */; };
 		34B810331BDBC6EA001FA5E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */; };
 		34B810351BDBC6EA001FA5E2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 34B810341BDBC6EA001FA5E2 /* GameScene.sks */; };
 		34B810371BDBC6EA001FA5E2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810361BDBC6EA001FA5E2 /* GameScene.swift */; };
@@ -17,6 +17,8 @@
 		34B810411BDBC6EA001FA5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B8103F1BDBC6EA001FA5E2 /* LaunchScreen.storyboard */; };
 		34B8104C1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B8104B1BDBC6EB001FA5E2 /* Beat_the_TrafficTests.swift */; };
 		34B810571BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B810561BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift */; };
+		BA354A241BDE9E4E002B94A2 /* coinSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = BA354A221BDE9E4E002B94A2 /* coinSound.wav */; };
+		BA354A251BDE9E4E002B94A2 /* trafficBGNoise.wav in Resources */ = {isa = PBXBuildFile; fileRef = BA354A231BDE9E4E002B94A2 /* trafficBGNoise.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		34B810521BDBC6EB001FA5E2 /* Beat the TrafficUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beat the TrafficUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B810561BDBC6EB001FA5E2 /* Beat_the_TrafficUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beat_the_TrafficUITests.swift; sourceTree = "<group>"; };
 		34B810581BDBC6EB001FA5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA354A221BDE9E4E002B94A2 /* coinSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coinSound.wav; sourceTree = "<group>"; };
+		BA354A231BDE9E4E002B94A2 /* trafficBGNoise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = trafficBGNoise.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		34B810311BDBC6EA001FA5E2 /* Beat the Traffic */ = {
 			isa = PBXGroup;
 			children = (
+				BA354A221BDE9E4E002B94A2 /* coinSound.wav */,
+				BA354A231BDE9E4E002B94A2 /* trafficBGNoise.wav */,
 				348F0AC81BDC005200417F9C /* Coin.atlas */,
 				34B810321BDBC6EA001FA5E2 /* AppDelegate.swift */,
 				34B810341BDBC6EA001FA5E2 /* GameScene.sks */,
@@ -239,7 +245,9 @@
 			files = (
 				34B810351BDBC6EA001FA5E2 /* GameScene.sks in Resources */,
 				34B810411BDBC6EA001FA5E2 /* LaunchScreen.storyboard in Resources */,
+				BA354A251BDE9E4E002B94A2 /* trafficBGNoise.wav in Resources */,
 				34B8103E1BDBC6EA001FA5E2 /* Assets.xcassets in Resources */,
+				BA354A241BDE9E4E002B94A2 /* coinSound.wav in Resources */,
 				348F0AC91BDC005200417F9C /* Coin.atlas in Resources */,
 				34B8103C1BDBC6EA001FA5E2 /* Main.storyboard in Resources */,
 			);
